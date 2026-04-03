@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Путешествие Н.Я. Бичурина</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="top-nav">
+    <div class="container top-nav__inner">
+      <a class="brand" href="index.html">Н.Я. Бичурин</a>
+      <div class="top-nav__links">
+        <a class="active" href="index.html">Путешествие</a>
+        <a href="biography.html">Биография</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" id="top">
+    <div class="hero-badge">ГАПОУ ЧР "ЧПК" Минобразования Чувашии.</div>
+    <div class="container hero__layout">
+      <div class="hero__content">
+        <p class="eyebrow">Исторический маршрут</p>
+        <h1>Путешествие Н.Я. Бичурина</h1>
+        <p class="hero__text">
+          Н.Я. Бичурин (Иакинф) - ученый, востоковед и один из первых русских исследователей Китая.
+          Его путь соединил Чувашию, Иркутск и Пекин.
+        </p>
+        <a class="btn" href="#map">Начать</a>
+      </div>
+      <figure class="hero__media">
+        <img src="https://www.nbchr.ru/virt_bichurin/images/23.jpg" alt="Портрет Н.Я. Бичурина">
+      </figure>
+    </div>
+  </header>
+
+  <main>
+    <section class="section fade-section" id="map">
+      <div class="container">
+        <h2>Интерактивная карта</h2>
+        <p class="section__subtitle">Нажмите на точку, чтобы увидеть факт о путешествии.</p>
+
+        <div class="map">
+          <img
+            src="img/route-map.png"
+            alt="Маршрут Чувашия - Иркутск - Пекин"
+            class="map__image"
+          >
+          <button type="button" class="map-pin" style="top: 44.5%; left: 39%;" data-city="chu" aria-label="Чувашия: родина Н.Я. Бичурина, духовное образование">
+            <span class="map-pin__media">
+              <img src="img/chuvash-emblem.png" alt="Герб Чувашии" width="56" height="42" loading="lazy">
+            </span>
+            <span class="map-pin__text">
+              <span class="map-pin__hint">Родина Бичурина · учёба и начало пути на Восток</span>
+            </span>
+            <span class="map-pin__dot" aria-hidden="true"></span>
+          </button>
+          <button type="button" class="map-pin" style="top: 53.4%; left: 77.0%;" data-city="irk" aria-label="Иркутск: сибирский этап возвращения">
+            <span class="map-pin__media">
+              <img src="img/irkutsk-emblem.png" alt="Герб Иркутска" width="56" height="42" loading="lazy">
+            </span>
+            <span class="map-pin__text">
+              <span class="map-pin__hint">Сибирь · важный пункт на обратном маршруте домой</span>
+            </span>
+            <span class="map-pin__dot" aria-hidden="true"></span>
+          </button>
+          <button type="button" class="map-pin" style="top: 68.8%; left: 87.6%;" data-city="pek" aria-label="Пекин: духовная миссия и годы исследований">
+            <span class="map-pin__media">
+              <img src="img/beijing-emblem.png" alt="Герб Китая" width="56" height="42" loading="lazy">
+            </span>
+            <span class="map-pin__text">
+              <span class="map-pin__hint">Столица миссии · язык, история и культура Китая</span>
+            </span>
+            <span class="map-pin__dot" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section fade-section" id="purpose">
+      <div class="container">
+        <article class="purpose-card">
+          <figure class="purpose-card__media">
+            <img src="img/beijing-purpose.png" alt="Исторический вид Пекина">
+          </figure>
+          <div class="purpose-card__content">
+            <h2>Цель поездки в Пекин</h2>
+            <p>
+              Поездка Н.Я. Бичурина в Пекин была связана со служением в составе Русской духовной миссии.
+              Помимо церковных обязанностей, его ключевой задачей стало глубокое изучение китайского языка,
+              исторических хроник и культурных традиций.
+            </p>
+            <p>
+              В Пекине он собирал и систематизировал источники, делал переводы и готовил материалы, которые
+              позже легли в основу его научных трудов. Именно эта работа превратила Бичурина в одного из
+              основателей российского китаеведения.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section timeline-section fade-section" id="timeline">
+      <div class="container">
+        <h2>Хронология</h2>
+        <div class="timeline">
+          <article class="timeline-item">
+            <span class="timeline-item__date">1777</span>
+            <p>Рождение Н.Я. Бичурина в Чувашии.</p>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-item__date">1807</span>
+            <p>Назначение в духовную миссию и подготовка к поездке в Китай.</p>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-item__date">1808-1821</span>
+            <p>Работа в Пекине: изучение языка, культуры и источников.</p>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-item__date">1820-е</span>
+            <p>Возвращение через Иркутск и публикация научных трудов.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section fade-section" id="facts">
+      <div class="container">
+        <h2>Факты</h2>
+        <div class="facts-grid">
+          <article class="fact-card">
+            <h3>Псевдоним Иакинф</h3>
+            <p>В научной среде Бичурин был известен как отец Иакинф.</p>
+          </article>
+          <article class="fact-card">
+            <h3>Языковед</h3>
+            <p>Он глубоко изучил китайский язык и основы китаеведения в России.</p>
+          </article>
+          <article class="fact-card">
+            <h3>Мост культур</h3>
+            <p>Его труды помогли русским ученым лучше понять историю и географию Китая.</p>
+          </article>
+          <article class="fact-card">
+            <h3>Чувашские корни</h3>
+            <p>В образе сайта отражены мотивы чувашской орнаментальной культуры: красный, золотой и белый цвета.</p>
+          </article>
+          <article class="fact-card">
+            <h3>Наследие исследователя</h3>
+            <p>Работы Бичурина по Китаю и Центральной Азии долго оставались эталоном для историков-востоковедов.</p>
+          </article>
+          <article class="fact-card">
+            <h3>Историческая география</h3>
+            <p>Он систематизировал множество источников, что сделало его труды значимыми для российской науки XIX века.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section quiz-section fade-section" id="quiz">
+      <div class="container">
+        <h2>Мини-тест</h2>
+        <div class="quiz">
+          <article class="quiz-item" data-correct="b">
+            <h3>1. Где родился Н.Я. Бичурин?</h3>
+            <div class="quiz-options">
+              <button data-option="a">Казань</button>
+              <button data-option="b">Чувашия</button>
+              <button data-option="c">Москва</button>
+            </div>
+            <p class="quiz-result" aria-live="polite"></p>
+          </article>
+
+          <article class="quiz-item" data-correct="c">
+            <h3>2. В каком городе он долго работал в составе миссии?</h3>
+            <div class="quiz-options">
+              <button data-option="a">Токио</button>
+              <button data-option="b">Сеул</button>
+              <button data-option="c">Пекин</button>
+            </div>
+            <p class="quiz-result" aria-live="polite"></p>
+          </article>
+
+          <article class="quiz-item" data-correct="a">
+            <h3>3. Какой сибирский город связан с его возвращением?</h3>
+            <div class="quiz-options">
+              <button data-option="a">Иркутск</button>
+              <button data-option="b">Омск</button>
+              <button data-option="c">Новосибирск</button>
+            </div>
+            <p class="quiz-result" aria-live="polite"></p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p><strong>Источники:</strong> энциклопедические статьи о Н.Я. Бичурине, материалы по истории российской китаистики.</p>
+      <p><strong>Автор:</strong> учебный интерактивный проект.</p>
+    </div>
+  </footer>
+
+  <div class="modal" id="city-modal" aria-hidden="true">
+    <div class="modal__overlay" data-close-modal></div>
+    <div class="modal__content" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal__close" aria-label="Закрыть" data-close-modal>&times;</button>
+      <figure class="modal__figure" id="modal-figure" hidden>
+        <img id="modal-image" class="modal__image" src="" alt="">
+      </figure>
+      <h3 id="modal-title"></h3>
+      <p id="modal-text"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
